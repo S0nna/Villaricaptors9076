@@ -1,0 +1,308 @@
+/* Top bar styles */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.top-bar.scrolled {
+    background-color: #333;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+}
+  
+  .logo {
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+  }
+
+  .home-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.nav-links a.bold {
+    font-weight: bold;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    background-image: url('Banner2.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner h1,
+.banner h2,
+.banner p {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.banner h1 {
+    font-size: 4em;
+    margin: 0 0 0.5em 0;
+}
+
+.banner p {
+    font-size: 1em;
+    max-width: 800px;
+    margin: 1em auto;
+    line-height: 1.5;
+}
+
+/* Common styles for sections */
+.location-section,
+.social-media-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #0066cc;
+    margin-bottom: 30px;
+}
+
+/* Map styles */
+.map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+/* Email Us Section Styles */
+.email-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8; /* Match other sections */
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.email-button {
+    display: block; /* Ensure buttons are block-level elements */
+    padding: 10px 20px;
+    margin: 10px 0; /* Space between buttons */
+    background-color: #0066cc; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.email-button:hover {
+    background-color: #0052a3; /* Darker shade on hover */
+}
+
+
+/* Social media styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Social Media Handle Section Styles */
+.social-media-handle {
+    padding: 20px 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    background-color: #f8f8f8; /* Match other sections */
+}
+
+.handle-title {
+    font-size: 1.5em; /* Adjust font size as needed */
+    color: black; /* Match the color scheme */
+    margin-top: -20px; /* Space above the handle */
+}
+
+.logo-section {
+    padding: 40px 0; /* Space above and below the logo */
+    background-color: #f8f8f8; /* Optional: background color for the section */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+}
+
+.container {
+    max-width: 1200px; /* Adjust as necessary for your layout */
+    width: 100%; /* Full width of the parent */
+}
+
+.team-logo {
+    max-width: 1000px; /* Adjust this value for desired size */
+    width: 100%; /* Responsive scaling */
+    height: auto; /* Maintain aspect ratio */
+    padding-left: 10%;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 60px; /* Increased bottom padding */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px; /* Ensure sections have a minimum width */
+}
+
+.footer-section h3 {
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.copyright {
+    text-align: center; /* Center the copyright text */
+    padding: 20px 0; /* Add some padding */
+    background-color: #222; /* Darker background for contrast */
+    color: #fff; /* White text color */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+#scroll-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #0089f2;
+    z-index: 9999;
+    transition: width 0.1s ease;
+  }
+  

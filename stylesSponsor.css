@@ -1,0 +1,412 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.top-bar.scrolled {
+    background-color: #333;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.nav-links a.bold {
+    font-weight: bold;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    background-image: url('img/Banner3.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner h1,
+
+.banner h1 {
+    font-size: 4em;
+    margin: 0 0 0.5em 0;
+}
+
+/* Main Content Styles */
+/* Main Content Styles */
+main {
+    padding: 40px 20px; /* Add some padding */
+}
+
+/* Sponsors Title */
+.sponsors-title {
+    color: #0066cc; /* Set to your desired blue color */
+    text-align: center;
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-bottom: 40px; /* Space below the title */
+}
+
+/* Sponsor Images Container */
+.sponsor-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+}
+
+/* Individual Sponsor Image Styles */
+.sponsor-image {
+    width: 400px; /* Increase width for larger images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 30px; /* Space between images */
+}
+
+.how-can-you-help {
+    margin: 100px 20px; /* Add margin for spacing */
+    text-align: center; /* Center align text */
+}
+
+/* How Can You Help Title */
+.help-title {
+    font-size: 2.5em; /* Title size */
+    margin-bottom: 20px; /* Space below title */
+    color: #0066cc; /* Set to your desired blue color */
+}
+
+/* Help Text Styles */
+.help-text {
+    font-size: 1.2em; /* Adjust font size for readability */
+    line-height: 1.5; /* Improve line spacing */
+    max-width: 1000px; /* Set a maximum width for the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Sponsorship Tiers Section */
+.sponsorship-tiers {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.tiers-title {
+    font-size: 2.5em;
+    color: #0066cc; /* Title color */
+    margin-bottom: 30px;
+}
+
+.tiers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tier {
+    flex: 1;
+    min-width: 250px; /* Minimum width for each tier */
+    max-width: 300px; /* Maximum width for each tier */
+    margin-bottom: 20px;
+}
+
+.tier-image {
+    width: 300px; /* Increased size for images */
+    height: 450px; /* Increased size for images */
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tier-name {
+    font-size: 1.5em; /* Increased font size */
+    font-weight: bold;
+    color: #0066cc; /* Set to blue color */
+    margin-bottom: 5px;
+}
+
+.tier-price {
+    font-size: 1.2em; /* Adjusted font size for better readability */
+    color: #666; /* Keep price color muted */
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666; /* Keep disclaimer color muted */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tiers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tier {
+        max-width: 100%;
+    }
+}
+
+/* Horizontal Line Divider */
+.divider {
+    width: 100%; /* Full width */
+    max-width: 1400px; /* Match max width of other sections */
+    border: none; /* Remove default border */
+    height: 2px; /* Thickness of the line */
+    background-color: #7a7a7a; /* Color of the line */
+    margin: 40px auto; /* Centered with margin above and below */
+}
+
+
+/* Supplies and Equipment Donations Section */
+.supplies-donations {
+    margin: 100px 20px; /* Add margin for spacing */
+    text-align: center; /* Center align text */
+}
+
+.donations-title {
+    font-size: 2.5em; /* Title size */
+    color: #0066cc; /* Set to your desired blue color */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.donations-text {
+    font-size: 1.2em; /* Adjust font size for readability */
+    line-height: 1.6; /* Improve line spacing */
+    max-width: 800px; /* Set a maximum width for the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Reset default body margins and padding */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Ensure main content doesn't add unwanted margins */
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Blue Bar Styles */
+.blue-bar {
+    background-color: #004999; /* Blue background */
+    padding: 40px 0; /* Padding top and bottom, no side padding */
+    margin: 60px 0 0 0; /* Space above the bar, no side margins */
+    width: 100vw; /* Full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.blue-bar-content {
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add padding to the content for smaller screens */
+    text-align: center; /* Center the text */
+}
+
+.blue-bar h2 {
+    color: white; /* White text */
+    font-size: 3em; /* Large font size */
+    line-height: 1.4; /* Improved line height for readability */
+    margin: 0; /* Remove default margins */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blue-bar h2 {
+        font-size: 1.5em; /* Smaller font size on mobile */
+    }
+}
+
+/* Informational Package Styles */
+.informational-package {
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.package-title {
+    font-size: 2.5em;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.pdf-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 60px auto;
+    max-width: 595px; /* Approximate width of A4 */
+    height: 842px; /* Approximate height of A4 */
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.view-pdf-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.view-pdf-button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pdf-container {
+        height: 500px; /* Adjusted height for mobile */
+    }
+}
+
+/* Informational Package Styles */
+.informational-package {
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.package-title {
+    font-size: 2.5em;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.pdf-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 595px; /* Approximate width of A4 */
+    height: 842px; /* Approximate height of A4 */
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.view-pdf-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.view-pdf-button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pdf-container {
+        height: 500px; /* Adjusted height for mobile */
+    }
+}
+
+/* Logo Section Styles */
+.logo-section {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin: 40px 0; /* Space above and below */
+}
+
+.footer-logo {
+    max-width: 1000px; /* Set a max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
